@@ -1,0 +1,54 @@
+Application de gestion des données du Programme de Médicalisation des Systemes d'information
+
+## OBJECTIF
+ 
+L’objectif est de manipuler des données issues du Programme de Médicalisation des Systèmes d’Information (PMSI) 
+qui nous a été fournies et qui sont à stocker dans une base de données MySQL.
+
+##FONCTIONNALITE
+
+L’application repond  à des questions selon un exemple de scénario que j'ai moi même crée:
+
+1-AFFICHER LES DONNEES DU PATIENT
+2-AFFICHER LA DUREE DU SEJOUR D'UN PATIENT
+3-AFFICHER LE NOMBRE D'ACTE D'UN PATIENT
+4-TROUVER LE DIAGNOSTIC D'UN PATIENT
+5-QUITTER L'APPLICATION
+
+	-La première requete me permet d'afficher les informations administratives d'un patient (nom, prenom, sexe date de naissance)
+	à partir d'un identifiant saisie au clavier
+	- La seconde permet d'afficher la durée de séjour d'un patient à partir d'un identifiant saisie au clavier
+	- La troisième permet d'afficher le nombre d'acte d'un patient à partir d'un identifiant saisie au clavier
+	-La quatrième permet d'afficher le diagnostic d'un patient à partir d'un identifiant saisie au clavier
+
+	
+
+##ETAPE DE REALISATION DU PROJET
+
+	-Creation de la base de donnée par le fichier fourni bd.sql,
+
+	-Connection à la base de donnée grace au driver fourni: Creation du fichier ConnectionJDBC.java,
+
+	-Execution des requetes:
+ 			-Création d'une classe Methode (Methode.java) qui contient les différents scrénarios d'exécution
+ 			-Création d'une classe Main( Menu.java) qui décrit le Menu
+  						*Donnees() : qui correspond au 1 dans le Menu
+ 						*Sejour()  : qui correspond au 2 dans le Menu
+ 						*NbActe()  : qui correspond au 3 dans le Menu
+ 						*TrouverDiagnostic(): qui correspond au 4 dans le Menu
+	-Sortie des résultats
+NB: L'application revient au Menu à chaque fois qu'il a executé la requete.
+
+
+##DIFFICULTES
+	-Creation des boucles du Menu
+	- Le fait que les scénarios soit tous dans même classe Methode.
+
+
+
+
+
+
+
+
+ 
